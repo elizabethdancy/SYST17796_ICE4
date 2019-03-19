@@ -25,13 +25,13 @@ public class PasswordValidator {
     {
         boolean isValid = false;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Please enter a password");
-        System.out.println("A length of at least 8");
-        System.out.println("At least one special character");
-        System.out.println("At least one uppercase letter");
-        String pass = sc.nextLine();
         do
         {
+            System.out.println("Please enter a password. To be valid, it must have:");
+            System.out.println("A length of at least 8");
+            System.out.println("At least one special character");
+            System.out.println("At least one uppercase letter");
+            String pass = sc.nextLine();
             if (checkLength(pass))//here you will add && conditions for the other two method calls
             {
                isValid=true;
